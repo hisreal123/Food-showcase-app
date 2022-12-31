@@ -1,20 +1,14 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <SafeAreaView className=''>
+        <Text className='text-xl'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam consequuntur numquam cum asperiores inventore impedit aliquam nobis voluptate tempora, nihil ipsa, sint ducimus. Enim, nobis? Nihil quibusdam mollitia voluptatum nesciunt.</Text>
+        <StatusBar style="auto" />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
